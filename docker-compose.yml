@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jupyter:
+    build: .
+    container_name: wifi-indoor-localization
+    ports:
+      - "8888:8888"
+    volumes:
+      # Montar el directorio actual en /app dentro del contenedor
+      - ./:/app
+      # Montar la carpeta de datos (ajusta la ruta según tu estructura)
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

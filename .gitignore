@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (los CSV son grandes, no queremos subirlos a git)
+data/*.csv
+!data/.gitkeep
+
+# Logs and outputs
+*.log
+*.pid
+*.pid.lock
+
+# Jupyter notebooks output
+*.nbconvert.ipynb
